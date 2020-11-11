@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ev0c^h0$1ff=2@1u4&muemv^h^#d5x30tf#lmd@*#i&+^j!p7k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -77,11 +77,11 @@ WSGI_APPLICATION = 'jwglxt.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'jwglxt',   #数据库名字
-        'USER': 'root',      #用户名
-        'PASSWORD': 'qmzp7390',#密码
-        'HOST': 'localhost', #本地主机
-        'PORT': '3306'       #端口号
+        'NAME': 'jwglxt',   # 数据库名称
+        'USER': 'root',      # 用户名
+        'PASSWORD': 'root',     # 密码
+        'HOST': 'localhost',    # 本地主机
+        'PORT': '3306'       # 端口号
     }
 }
 
@@ -108,10 +108,10 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'zh-hans' # 使用中文
+LANGUAGE_CODE = 'zh-Hans'   # 使用中文
 
 # TIME_ZONE = 'UTC'
-TIME_ZONE = 'Asia/Shanghai' # 中国时间
+TIME_ZONE = 'Asia/Shanghai'     # 中国时间
 
 USE_I18N = True
 

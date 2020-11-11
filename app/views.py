@@ -1,8 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render,render_to_response
 from django.http import Http404, HttpResponse
 from django.db.models import Q
 from app.models import *
 from datetime import *
+
 AccountID = None
 AccountType = False
 LoginUser = None
